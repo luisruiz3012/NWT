@@ -38,7 +38,7 @@ function goUp(){
         var upButton = document.getElementById('up-button')
 
         if(scroll > 300) {
-            upButton.style.right = 40 + "px"
+            upButton.style.right = 30 + "px"
         } else {
             upButton.style.right = -100 + "px"
         }

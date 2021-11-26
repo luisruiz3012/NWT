@@ -69,19 +69,95 @@ p {
     margin-top: 20px;
 }
 
-.card:hover {
-    transform: translateY(-20px);
-    background-color: rgba(253, 253, 253, 0.657);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    -webkit-transform: scale(1);
-    transform: scale(1.1);
-    transition: all 0.75s;
-    cursor: pointer;
+.body {
+    display:grid;
+/*     place-items:center; */
+    height: 100%;
 }
 
-.card:hover img {
-    filter: brightness(85%);
-    transition: all 1s;
+.card-container {
+    overflow-y: hidden;
+    position: relative;
+    border-radius: 15px;
+    max-width: 650px;
+    height: 300px;
+    text-align: center;
+}
+
+.card-container h3 {
+    position: absolute;
+    top: 40px;
+    left: 8px;
+    font-size: 20px;
+    display: none;
+}
+
+.card-container h2 {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    font-size: 26px;
+    text-align: center;
+    color: black;
+
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+}
+
+.card-container p {
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    font-size: 14px;
+    display: none;
+    width: 80%;
+}
+
+.info_img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+
+  opacity: 0.80;
+
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+
+  transform-origin:center;
+  transform:perspective(800px) rotateY(25deg);
+  transition:0.5s;
+}
+.container1 {
+  max-width:600px;
+  min-height:350px;
+
+  overflow-y: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.container1:hover img {
+  opacity:0.3;
+}
+
+.card-container:hover h3, .card-container:hover p, .card-container:hover img {
+    display: inline;
+    opacity: 1;
+    transform:perspective(800px)       rotateY(0deg);
+}
+
+.card-container:hover img {
+    opacity: 0.80;
+}
+
+.card-container:hover h2 {
+    display: none;
 }
 
 .contact img {
@@ -118,6 +194,68 @@ form label {
         width: 600px;
         height: 400px;
     }
+
+    .container1 {
+        overflow-y: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+
+    }
+
+    .card-container {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .card-container h2 {
+        position: absolute;
+        top: 105px;
+        left: 25px;
+        font-size: 26px;
+        text-align: center;
+        color: black;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .container1 {
+
+        overflow-y: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+
+    }
+
+    .card-container {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .card-container h3 {
+        position: absolute;
+        top: 35px;
+        left: 10px;
+        font-size: 30px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        font-size: 18px;
+        display: none;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -125,6 +263,22 @@ form label {
         width: 550px;
         height: 350px;
 
+    }
+
+    .container1 {
+
+        overflow-y: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+
+    }
+
+    .card-container {
+        max-width: 400px;
+        height: 300px;
     }
 }
 
@@ -166,6 +320,39 @@ form label {
     .contact-form {
         width: 100vw;
     }
+
+    .container1 {
+
+        overflow-y: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+
+    }
+
+    .card-container {
+        max-width: 400px;
+        height: 350px;
+    }
+
+    .card-container h3 {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        font-size: 30px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        font-size: 18px;
+        display: none;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -198,6 +385,39 @@ form label {
         width: 450px;
         height: 350px;
     }
+
+    .container1 {
+
+        overflow-y: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+
+    }
+
+    .card-container {
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .card-container h3 {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        font-size: 30px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 110px;
+        left: 15px;
+        font-size: 18px;
+        display: none;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -221,6 +441,39 @@ form label {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+
+    .container1 {
+
+        overflow-y: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+
+    }
+
+    .card-container {
+        max-width: 300px;
+        height: 400px;
+    }
+
+    .card-container h3 {
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        font-size: 30px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 150px;
+        left: 15px;
+        font-size: 18px;
+        display: none;
+        width: 80%;
     }
 }
 
@@ -267,6 +520,23 @@ form label {
     form {
         padding: 0;
     }
+
+    .card-container h3 {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        font-size: 40px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        font-size: 20px;
+        display: none;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 383px) {
@@ -277,6 +547,23 @@ form label {
     #phone-icon p {
         margin-right: 75px;
     }
+
+    .card-container h3 {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        font-size: 40px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        font-size: 20px;
+        display: none;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -284,7 +571,41 @@ form label {
         margin-top: 20px;
     }
 
+    .card-container h3 {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        font-size: 40px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        font-size: 20px;
+        display: none;
+        width: 80%;
+    }
+
     #phone-icon p {
         margin-right: 40px;
+    }
+
+    .card-container h3 {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        font-size: 40px;
+        display: none;
+    }
+
+    .card-container p {
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        font-size: 20px;
+        display: none;
+        width: 80%;
     }
 }

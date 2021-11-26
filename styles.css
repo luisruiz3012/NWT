@@ -341,7 +341,7 @@ form label {
         position: absolute;
         top: 35px;
         left: 15px;
-        font-size: 30px;
+        font-size: 20px;
         display: none;
     }
 
@@ -349,7 +349,7 @@ form label {
         position: absolute;
         top: 120px;
         left: 15px;
-        font-size: 18px;
+        font-size: 14px;
         display: none;
         width: 80%;
     }
@@ -406,7 +406,7 @@ form label {
         position: absolute;
         top: 35px;
         left: 15px;
-        font-size: 30px;
+        font-size: 20px;
         display: none;
     }
 
@@ -414,7 +414,7 @@ form label {
         position: absolute;
         top: 110px;
         left: 15px;
-        font-size: 18px;
+        font-size: 14px;
         display: none;
         width: 80%;
     }
@@ -456,14 +456,14 @@ form label {
 
     .card-container {
         max-width: 300px;
-        height: 400px;
+        height: 350px;
     }
 
     .card-container h3 {
         position: absolute;
         top: 50px;
         left: 15px;
-        font-size: 30px;
+        font-size: 20px;
         display: none;
     }
 
@@ -471,7 +471,7 @@ form label {
         position: absolute;
         top: 150px;
         left: 15px;
-        font-size: 18px;
+        font-size: 14px;
         display: none;
         width: 80%;
     }
@@ -523,17 +523,17 @@ form label {
 
     .card-container h3 {
         position: absolute;
-        top: 35px;
+        top: 45px;
         left: 15px;
-        font-size: 40px;
+        font-size: 20px;
         display: none;
     }
 
     .card-container p {
         position: absolute;
-        top: 120px;
+        top: 140px;
         left: 15px;
-        font-size: 20px;
+        font-size: 14px;
         display: none;
         width: 80%;
     }
@@ -550,17 +550,17 @@ form label {
 
     .card-container h3 {
         position: absolute;
-        top: 35px;
+        top: 45px;
         left: 15px;
-        font-size: 40px;
+        font-size: 20px;
         display: none;
     }
 
     .card-container p {
         position: absolute;
-        top: 120px;
+        top: 140px;
         left: 15px;
-        font-size: 20px;
+        font-size: 14px;
         display: none;
         width: 80%;
     }
@@ -571,22 +571,6 @@ form label {
         margin-top: 20px;
     }
 
-    .card-container h3 {
-        position: absolute;
-        top: 35px;
-        left: 15px;
-        font-size: 40px;
-        display: none;
-    }
-
-    .card-container p {
-        position: absolute;
-        top: 120px;
-        left: 15px;
-        font-size: 20px;
-        display: none;
-        width: 80%;
-    }
 
     #phone-icon p {
         margin-right: 40px;
@@ -594,18 +578,18 @@ form label {
 
     .card-container h3 {
         position: absolute;
-        top: 35px;
+        top: 45px;
         left: 15px;
-        font-size: 40px;
+        font-size: 20px;
         display: none;
     }
 
     .card-container p {
         position: absolute;
-        top: 120px;
+        top: 140px;
         left: 15px;
-        font-size: 20px;
-        display: none;
+        font-size: 14px;
+		display: none;
         width: 80%;
     }
 }

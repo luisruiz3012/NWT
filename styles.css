@@ -28,7 +28,7 @@ p {
 }
 
 .logo {
-    width: 190px;
+    width: 100px;
 }
 
 .language {
@@ -151,6 +151,18 @@ form label {
         width: 550px;
         height: 350px;
     }
+
+    @media (max-height: 812px) {
+        .main-banner {
+            height: 100vh;
+        }
+    }
+}
+
+@media (min-height: 830px) {
+    .main-banner {
+        height: 140vh;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -228,7 +240,7 @@ form label {
         height: 350px;
     }
 
-    @media (max-height: 875px) {
+    @media (max-height: 845px) {
         .main-banner {
             height: 100vh;
         }
